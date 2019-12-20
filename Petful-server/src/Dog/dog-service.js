@@ -17,4 +17,4 @@ const dogService = {
   }
 };
 
-module.export = dogService;
+module.exports = dogService;
