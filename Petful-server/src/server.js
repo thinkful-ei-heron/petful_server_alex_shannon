@@ -2,10 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const { PORT, NODE_ENV } = require('./config');
-const adoptionRouter = require('./Adoption/adoption-router');
 const catRouter = require('./Cat/cat-router');
 const dogRouter = require('./Dog/dog-router');
-const queueMain = require('./QueueGen');
+const userRouter = require('./User/user-router');
+const successRouter =require('./Success/success-router');
+const { queueMain } = require('./QueueGen');
 
 
 queueMain();
@@ -19,8 +20,10 @@ const app = express();
 app.use(cors());
 app.use(morgan(morganOption));
 
-// app.use('/api/dogs', dogRouter);
+app.use('/api/dogs', dogRouter);
 app.use('/api/cats', catRouter);
+app.use('/api/users', userRouter);
+app.use('/api/successes', successRouter);
 
 
 

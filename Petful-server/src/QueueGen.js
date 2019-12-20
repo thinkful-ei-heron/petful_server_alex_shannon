@@ -67,4 +67,13 @@ function queueMain() {
   setInterval(autoQueue, 30000);
 }
 
-module.exports = queueMain;
+const queues = {
+  catQueue,
+  dogQueue,
+  userQueue
+};
+
+module.exports = {
+  queueMain,
+  queues
+};

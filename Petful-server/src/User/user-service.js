@@ -1,9 +1,15 @@
 const { queues } = require('../QueueGen');
 const STORE = require('../Store');
 
-const dogService = {
-  deleteDog(){
+const userService = {
+
+  addUser(user){
+    queues.userQueue.enqueue(user);
+  },
+
+  deleteBothPets(){
     let humanName = queues.userQueue.dequeue();
+
     let dog = queues.dogQueue.dequeue();
     let animalName = dog.name;
     let imageURL = dog.imageURL;
@@ -14,7 +20,18 @@ const dogService = {
         imageURL,
         imageDescription }
     );
+
+    let cat = queues.catQueue.dequeue();
+    animalName = cat.name;
+    imageURL = cat.imageURL;
+    imageDescription = cat.imageDescription;
+    STORE.success.push(
+      { humanName,
+        animalName,
+        imageURL,
+        imageDescription });
+
   }
 };
 
-module.export = dogService;
+module.exports = userService;
