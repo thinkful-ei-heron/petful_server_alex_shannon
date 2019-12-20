@@ -144,7 +144,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Buffy',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
@@ -153,7 +153,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Duffy',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
@@ -162,7 +162,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Scruffy',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
@@ -171,7 +171,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Dave',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
@@ -180,7 +180,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Scrunches',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
@@ -189,7 +189,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Cat',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
@@ -198,7 +198,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Test',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
@@ -207,7 +207,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Not Fluffy',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
@@ -216,7 +216,7 @@ let STORE = {
     {
       imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
       imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-      name: 'Fluffy',
+      name: 'Spike',
       sex: 'Female',
       age: 2,
       breed: 'Bengal',
