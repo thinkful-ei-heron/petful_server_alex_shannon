@@ -240,7 +240,7 @@ let STORE = {
   success: [
     {
       animalName:'Rusty',
-      imageUrl:'https://images.pexels.com/photos/485294/pexels-photo-485294.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+      imageURL:'https://images.pexels.com/photos/485294/pexels-photo-485294.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
       imageDescription: 'little dog',
       humanName:'Jeremy Jamm'
     }
