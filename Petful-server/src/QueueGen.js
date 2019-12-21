@@ -1,6 +1,7 @@
 
 const STORE = require('./Store');
 const Queue = require('./Queue');
+const adminService = require('./Admin/admin-service');
 
 let catQueue = new Queue();
 let dogQueue = new Queue();
@@ -10,6 +11,12 @@ let userQueue = new Queue();
 function autoQueue() {
   //interval here which randomly selects one cat from STORE.cats and one dog from STORE.dogs
   //Will call createQueue(randoCat, randoDog)
+  if(STORE.success.length >= 30) {
+    let originalSuccess = STORE.success[0];
+    STORE.success = [];
+    STORE.success.push(originalSuccess);
+    adminService.resetData();
+  }
 
   let userIndex = Math.floor(Math.random() * Math.floor(STORE.users.length - 1));
   let catIndex = Math.floor(Math.random() * Math.floor(STORE.cats.length - 1));
