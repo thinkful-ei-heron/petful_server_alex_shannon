@@ -17,7 +17,6 @@ function autoQueue() {
     STORE.success.push(originalSuccess);
     catQueue = new Queue();
     dogQueue = new Queue();
-    userQueue = new Queue();
   }
 
   let userIndex = Math.floor(Math.random() * Math.floor(STORE.users.length - 1));
