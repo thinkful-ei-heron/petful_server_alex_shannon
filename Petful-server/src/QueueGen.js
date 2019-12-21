@@ -26,7 +26,7 @@ function autoQueue() {
 function autoCatAdopt() {
   let humanName = userQueue.dequeue();
   let adoptionSuccess  = Math.floor(Math.random() * Math.floor(2));
-  if(adoptionSuccess === 1) {
+  if(adoptionSuccess === 1 && STORE.users.includes(humanName)) {
     let cat = catQueue.dequeue();
     let animalName = cat.name;
     let imageURL = cat.imageURL;
@@ -37,14 +37,13 @@ function autoCatAdopt() {
         imageURL,
         imageDescription }
     );
-    console.log(`Success! ${animalName} was adopted by ${humanName}!`);
   } else userQueue.enqueue(humanName);
 }
 
 function autoDogAdopt() {
   let humanName = userQueue.dequeue();
   let adoptionSuccess  = Math.floor(Math.random() * Math.floor(2));
-  if(adoptionSuccess === 1) {
+  if(adoptionSuccess === 1 && STORE.users.includes(humanName)) {
     let dog = dogQueue.dequeue();
     let animalName = dog.name;
     let imageURL = dog.imageURL;
@@ -55,7 +54,6 @@ function autoDogAdopt() {
         imageURL,
         imageDescription }
     );
-    console.log(`Success! ${animalName} was adopted by ${humanName}!`);
   } else userQueue.enqueue(humanName);
 }
 

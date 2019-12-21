@@ -10,7 +10,6 @@ userRouter
     res.status(200).json(queues.userQueue.first);
   })
   .post(jsonBodyParser, (req,res,next) => {
-    console.log(req.body);
     const { user } = req.body;
     userService.addUser(user);
     res.status(201).json(queues.userQueue);

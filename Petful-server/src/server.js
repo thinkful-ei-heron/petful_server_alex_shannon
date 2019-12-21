@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-const { PORT, NODE_ENV } = require('./config');
+const { PORT, NODE_ENV, CLIENT_ORIGIN } = require('./config');
 const catRouter = require('./Cat/cat-router');
 const dogRouter = require('./Dog/dog-router');
 const userRouter = require('./User/user-router');
@@ -18,7 +18,9 @@ const morganOption = (NODE_ENV === 'production')
 
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: CLIENT_ORIGIN
+}));
 app.use(morgan(morganOption));
 
 app.use('/api/dogs', dogRouter);
@@ -51,5 +53,5 @@ app.use(function (err, req, res, next) {
 
 
 app.listen(PORT,()=>{
-  console.log('Serving on 8000');
+  console.log(`Serving on ${PORT}`);
 });

@@ -6,17 +6,14 @@ const adminService = {
     while(currNode.first !== null) {
       currNode.dequeue();
     }
-    console.log('finished resetting cats');
     currNode = queues.dogQueue;
     while(currNode.first !== null) {
       currNode.dequeue();
     }
-    console.log('finished resetting dogs');
     currNode = queues.userQueue;
     while(currNode.first !== null) {
       currNode.dequeue();
     }
-    console.log('finished resetting data');
     autoQueue();
     autoQueue();
   }
