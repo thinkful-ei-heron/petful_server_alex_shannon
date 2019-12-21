@@ -190,6 +190,15 @@ let STORE = {
       age: 2,
       breed: 'Grey cat',
       story: 'Thrown on the street'
+    },
+    {
+      imageURL: 'https://images.pexels.com/photos/2007/animal-dog-pet-cute.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+      imageDescription: 'boxer dog',
+      name: 'Not a Dog',
+      sex: 'Male',
+      age: 3,
+      breed: 'Boxer',
+      story: 'Found in neighborhood'
     }
   ],
   users: [

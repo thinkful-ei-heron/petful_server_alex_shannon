@@ -28,6 +28,8 @@ function autoQueue() {
   userQueue.enqueue(STORE.users[userIndex]);
   catQueue.enqueue(STORE.cats[catIndex]);
   dogQueue.enqueue(STORE.dogs[dogIndex]);
+  catQueue.enqueue(STORE.cats[dogIndex]);
+  dogQueue.enqueue(STORE.dogs[catIndex]);
   if(adoptionType === 0) autoCatAdopt();
   else autoDogAdopt();
 }
