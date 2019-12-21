@@ -8,7 +8,7 @@
   },
   "author": "Alex Cumbo",
   "license": "UNLICENSED",
-  "main": "src/server.js",
+  "main": "Petful-server/src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./src/server.js"
