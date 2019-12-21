@@ -9,11 +9,12 @@ class Queue {
   constructor() {
     this.first = null;
     this.last = null;
+    this.length = 0;
   }
 
   enqueue(data) {
     const node = new _Node(data);
-
+    this.length++;
     if(this.first === null) {
       this.first = node;
     }
@@ -29,6 +30,7 @@ class Queue {
     if(this.first === null) {
       return;
     }
+    this.length--;
     const node = this.first;
     this.first = this.first.next;
 

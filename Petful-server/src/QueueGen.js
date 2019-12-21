@@ -19,12 +19,15 @@ function autoQueue() {
     dogQueue = new Queue();
   }
 
-  let userIndex = Math.floor(Math.random() * Math.floor(STORE.users.length - 1));
+  if(userQueue.length <= 10) {
+    let userIndex = Math.floor(Math.random() * Math.floor(STORE.users.length - 1));
+    userQueue.enqueue(STORE.users[userIndex]);
+  }
+
   let catIndex = Math.floor(Math.random() * Math.floor(STORE.cats.length - 1));
   let dogIndex = Math.floor(Math.random() * Math.floor(STORE.dogs.length - 1));
   let adoptionType  = Math.floor(Math.random() * Math.floor(2));
 
-  userQueue.enqueue(STORE.users[userIndex]);
   catQueue.enqueue(STORE.cats[catIndex]);
   dogQueue.enqueue(STORE.dogs[dogIndex]);
   catQueue.enqueue(STORE.cats[dogIndex]);
