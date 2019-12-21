@@ -2,7 +2,7 @@ const { queues, autoQueue } = require('../QueueGen');
 
 const adminService = {
   resetData(){
-    if(queues.catQueue && queues.dogQueue && queues.userQueue) {
+    if(queues.catQueue !== undefined && queues.dogQueue !== undefined && queues.userQueue !== undefined) {
       let currNode = queues.catQueue;
       while(currNode.first !== null) {
         currNode.dequeue();
