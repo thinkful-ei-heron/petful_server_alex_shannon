@@ -75,5 +75,6 @@ const queues = {
 
 module.exports = {
   queueMain,
-  queues
+  queues,
+  autoQueue
 };

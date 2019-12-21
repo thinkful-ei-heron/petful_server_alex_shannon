@@ -6,6 +6,7 @@ const catRouter = require('./Cat/cat-router');
 const dogRouter = require('./Dog/dog-router');
 const userRouter = require('./User/user-router');
 const successRouter =require('./Success/success-router');
+const adminRouter = require('./Admin/admin-router');
 const { queueMain } = require('./QueueGen');
 
 
@@ -24,6 +25,7 @@ app.use('/api/dogs', dogRouter);
 app.use('/api/cats', catRouter);
 app.use('/api/users', userRouter);
 app.use('/api/successes', successRouter);
+app.use('/api/admin', adminRouter);
 
 
 
