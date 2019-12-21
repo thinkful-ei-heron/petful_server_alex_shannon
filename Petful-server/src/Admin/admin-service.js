@@ -1,4 +1,5 @@
-const { queues, autoQueue } = require('../QueueGen');
+const { queues } = require('../QueueGen'); 
+const autoQueue = require('../QueueGen');
 
 const adminService = {
   resetData(){
