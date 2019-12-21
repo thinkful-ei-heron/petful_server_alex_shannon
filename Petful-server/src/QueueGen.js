@@ -11,7 +11,7 @@ let userQueue = new Queue();
 function autoQueue() {
   //interval here which randomly selects one cat from STORE.cats and one dog from STORE.dogs
   //Will call createQueue(randoCat, randoDog)
-  if(STORE.success.length >= 30) {
+  if(STORE.success.length >= 6) {
     let originalSuccess = STORE.success[0];
     STORE.success = [];
     STORE.success.push(originalSuccess);
