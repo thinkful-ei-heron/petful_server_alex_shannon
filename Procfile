@@ -1,1 +1,1 @@
-web: node server.js
+web: node Petful-server/src/server.js
