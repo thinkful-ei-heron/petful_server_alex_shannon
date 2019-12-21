@@ -2,6 +2,7 @@ const { queues, autoQueue } = require('../QueueGen');
 
 const adminService = {
   resetData(){
+    console.log(queues.catQueue);
     let currNode = queues.catQueue;
     while(currNode.first !== null) {
       currNode.dequeue();
