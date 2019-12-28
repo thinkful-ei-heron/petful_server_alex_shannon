@@ -20,7 +20,7 @@ Alex Bannow and Shannon Lichtenwalter
 
 #### Relevant Links
   Client Github repo: https://github.com/thinkful-ei-heron/petful_client_alex_shannon
-  Live App: https://petful-client.rbannal.now.sh/
+  Live App: https://petfulclient.rbannal.now.sh/
   Github repo: https://github.com/thinkful-ei-heron/petful_server_alex_shannon
   Server URL: https://salty-hollows-30740.herokuapp.com/
 
